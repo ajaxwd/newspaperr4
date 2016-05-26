@@ -1,0 +1,17 @@
+<h1><%= t('users.add') %></h1>
+<p>We need name, lastname, age</p>
+
+<!--%= # form_tag users_create_path, id: 'users_create', remote: true do %-->
+<%= form_tag users_create_path do %>
+	<%= label_tag 'name', t('users.name')%>
+	<%= text_field_tag 'name' %>
+	<%= label_tag 'lastname', t('users.lastname')%>
+	<%= text_field_tag 'lastname' %>
+	<%= label_tag 'age', t('users.age')%>
+	<%= text_field_tag 'age' %>
+	<%= submit_tag t('users.send') %>
+<% end -%>
+
+<%= link_to 'Posts', posts_path %>
+
+<%= image_tag("banner.png", size: "234x60", alt: "banner") %>

@@ -1,0 +1,22 @@
+<h1>Action</h1>
+
+<p><%= @task %></p>
+<h2><%= @var %></h2>
+
+<h2><%= @token %></h2>
+
+<h2><%= flash[:error_text] %></h2>
+
+<ul>
+	<% @actions.each do |action| %>
+		<li><%= action %></li>
+	<% end %>
+</ul>
+
+<% if @task.include? 'a' %>
+	<p>@task include a</p>
+<% end %>
+<p><%= @task.upcase %></p>
+
+
+<%= @local %>

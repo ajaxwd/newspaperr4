@@ -1,0 +1,7 @@
+es:
+    users:
+        add: "Agregar usuario"
+        name: "Nombre"
+        lastname: "Apellido"
+        age: "Edad"
+        send: "Enviar"
